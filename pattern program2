@@ -1,0 +1,30 @@
+Day 1 
+
+2.      _  _  _  _  *   --- row 5     ----> row 1  1 star 4 space 
+       _   _  _  *  *                 ----> row 2  2 star 3 space 
+       _   _  *  *  *                 ----> row 3  3 star 2 space 
+        _  *  *  *  *                 ----> row 4  4 star 1 space
+        *  *  *  *  *                ---->  row 5  5 star 0 space
+
+Pattern program 
+
+
+#include<stdio.h>
+int main()
+{
+for(int i=1;i<=5;i++)
+{
+for(int s=1; s<=(5-i);s++)
+{
+   printf("  ");
+}
+for(int j=1;j<=i;j++)
+{
+ printf("* ");
+}
+printf("\n");
+}
+return 0;
+}
+  
+           
